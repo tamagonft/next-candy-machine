@@ -65,7 +65,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>next-candy-machine</title>
+        <title>egg dispenser</title>
         <meta
           name="description"
           content="Simplified NextJs with typescript example app integrated with Metaplex's Candy Machine"
@@ -76,7 +76,7 @@ export default function Home() {
       <div className="flex flex-col items-center min-h-screen mx-6">
         <Toaster />
         <div className="flex items-center justify-between w-full mt-3">
-          <h1 className="text-2xl font-bold">next-candy-machine</h1>
+          <h1 className="text-2xl font-bold">egg dispenser</h1>
           <div className="flex items-center">
             {connected && (
               <div className="flex items-end mr-2">
@@ -114,7 +114,7 @@ export default function Home() {
                   ) : (
                     <>
                       <div className="flex flex-col w-1/2">
-                        <h1 className="mb-10 text-3xl font-bold">Mint One</h1>
+                        <h1 className="mb-10 text-3xl font-bold">gib one egg</h1>
                         <button
                           onClick={startMint}
                           disabled={isMinting}
@@ -124,7 +124,7 @@ export default function Home() {
                         </button>
                       </div>
                       <div className="flex flex-col w-1/2">
-                        <h1 className="mb-10 text-3xl font-bold">Mint Many</h1>
+                        <h1 className="mb-10 text-3xl font-bold">gib many eggs</h1>
                         <MintMany />
                       </div>
                     </>
@@ -143,7 +143,7 @@ export default function Home() {
           )}
         </div>
         <div className="flex flex-col w-full">
-          <h2 className="text-2xl font-bold">My NFTs</h2>
+          <h2 className="text-2xl font-bold">my eggs</h2>
           <div className="flex mt-3 gap-x-2">
             {(nfts as any).map((nft: any, i: number) => {
               return <AnNFT key={i} nft={nft} />;
